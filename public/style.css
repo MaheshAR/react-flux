@@ -1,0 +1,277 @@
+.row{
+    margin: 0;
+}
+p{
+     margin-bottom: 0;
+ }
+
+.padding0{
+    padding: 0;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.loginContainer{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    top: calc(50% - 100px);
+    left: calc(50% - 175px);
+    border: 1px solid #d5d6d9;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    background: #eeeeee;
+}
+
+.loginContainer .loginHeader{
+    text-align: center;
+}
+
+.loginContainer .inputForm{
+ padding: 5px 0;   
+}
+
+.loginContainer .inputLabel{
+    width: 100px;
+    display: inline-block;
+}
+
+.loginContainer .inputField{
+    width: calc(100% - 100px);
+    border-radius: 4px;
+    height: 30px;
+    border: 1px solid #d5d6d9;
+    padding: 0 5px;
+}
+
+.loginContainer .inputField:focus{
+    outline: none;
+}
+
+.loginContainer .actionContainer{
+    margin-top: 20px;
+}
+
+.actionContainer .register{
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 15px;
+    color: blue;
+}
+
+.loader-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 10;
+}
+
+.loader-container .loader{
+    position: absolute;
+    background-image: url("assets/loader.gif");
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+}
+
+.dashboard{
+    width: 100%;
+    height: 100%;
+}
+
+
+.dashboard .header{
+    background-color: #404142;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.dashboard .centerDiv{
+    text-align: center;
+    padding-left: 16%;
+}
+
+.dashboard .userInfo{
+    line-height: 40px;
+    text-transform: capitalize;
+    text-align: right;
+}
+
+.dashboard .addExpense{
+    padding: 20px;
+    border-bottom: 1px solid #d5d6d9;
+}
+
+.dashboard .addExpenseTitle{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dashboard .back{
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.expenseList{
+    padding: 20px;
+}
+
+.expenseList .list{
+    padding: 0;
+}   
+
+.expenseList .list li{
+    float: left;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #d5d6d9;
+    border-radius: 4px;
+    background-color: #ffedb5;
+    cursor: pointer
+}
+
+.expenseList .list li p {
+    padding-top: 5px;
+}
+
+.expenseList .list li:hover{
+    background-color: #f7e19b;
+}
+
+/* Modal animation styles  */
+
+.overlay1{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7); 
+}
+
+.modal-animation-enter.modal-window .overlay1{
+    background: rgba(0,0,0,0);
+}
+
+.modal-animation-enter.modal-animation-enter-active.modal-window .overlay1{
+    background: rgba(0,0,0,0.7);
+    transition: 0.5s;
+}
+
+.modal-animation-leave.overlay1{
+    background: rgba(0,0,0,0.7);
+}
+
+.modal-animation-leave.modal-animation-leave-active.modal-window .overlay1{
+    background: rgba(0,0,0,0);
+    transition: 0.5s;
+}
+
+.addExpenseForm{
+    position: absolute;
+    width: 300px;
+    left: calc(50% - 150px);
+    background: #fff;
+    border: 1px solid #d5d6d9;
+    border-radius: 4px;
+    opacity: 1;
+    transform: translate3d(0, 100px, 0);
+}
+
+.modal-animation-enter.modal-window .addExpenseForm{
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.modal-animation-enter.modal-animation-enter-active.modal-window .addExpenseForm{
+    opacity: 1;
+    transform: translate3d(0, 100px, 0);
+    transition: 0.5s;
+}
+
+.modal-animation-leave.modal-window .addExpenseForm{
+    opacity: 1;
+    transform: translate3d(0, 100px, 0);
+}
+
+.modal-animation-leave.modal-animation-leave-active.modal-window .addExpenseForm{
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    transition: 0.5s;
+}
+
+.addExpenseForm .expenseForm{
+    padding: 10px;
+}
+
+.addExpenseForm .field{
+    padding: 10px 0;
+}
+
+.addExpenseForm .spValue{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #d5d6d9;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.addExpenseForm .action{
+    margin-top: 20px;
+}
+
+.dailyExpense{
+    padding: 20px;
+}
+
+.dailyExpense table{
+    width: 100%;
+    border: 1px solid #d5d6d9;
+}
+
+.dailyExpense table thead{
+    background: #d5d6d9;
+}
+
+.dailyExpense table thead th{
+    padding: 10px;
+    font-size: 14px;
+}
+
+.dailyExpense table tbody td{
+    padding: 10px;
+    border-bottom: 1px solid #d5d6d9;
+    font-size: 12px;
+}
+
+.react-datepicker-wrapper{
+    width: 100%;
+}
+
+.react-datepicker__input-container, .react-datepicker__input-container input{
+    width: 100%;
+}

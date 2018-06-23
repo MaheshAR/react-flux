@@ -1,0 +1,15 @@
+[{
+	"userid": "",
+	"expenseid": 20171,
+	"name": "January 2017",
+	"totalExpense": 50000,
+	"expense": {
+		"1":{
+			"name": "1st January",
+			"amount": 1000,
+			"reason": "aaaa",
+			"createdOn": ""
+		}
+	},
+	"createdOn":""
+}]
